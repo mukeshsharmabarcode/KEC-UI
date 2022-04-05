@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEC | Login</title>
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css.map">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login">
+            <div class="login-logo " style="margin: 1rem 0rem">
+                <img src="./images/logo-lg.png" alt="Comapny logo" >
+               
+            </div>
+            <form onSubmit="return fillup();" action="dashboard.html">
+                <div class="inp-control">
+                  <input type="text" class=" my-input" id="usr" placeholder="Enter User Name" 
+                  autocomplete="off" required >
+                  <i class="bi bi-person usr"></i>
+                  <!-- <span id="has-error_usr" >Plz Enter User Name </span> -->
+                 </div>
+                  <div class="inp-control">
+                 <input type="password" class=" my-input " id="pwd" placeholder="Enter Correct Password"
+                 required autocomplete="off">
+                 <i class="bi bi-key psd"></i>
+                  <!-- <span id="has-error_psd">Plz Enter Corrected Password </span> -->
+              </div>
+              <div>
+             
+              </div>
+                  <button type="submit" class="login-btn" disabled>Sign in</button>
+              </form>
+              <div class="login-logo ">
+                <img src="./images/logo-lg-1.png" width="120px" alt="Comapny logo">
+                <p class="py-2 small">Version : 1.0.0.20211210</p>
+               
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/Chart.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

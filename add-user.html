@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEC | Add User</title>
+    
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css.map">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+</head>
+
+<body >
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="./images/logo-lg.png" alt="Comapny logo">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class="bi bi-x-circle"></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <img src="./images/user-image-2.png" alt="User picture" class="profile-image">
+                <div class="sidebar-user-name">
+                   User Name 
+                </div>
+            </div>
+            <button class="btn btn-outline" onclick="window.location.href = 'index.html'">
+                <i class="bi bi-box-arrow-in-right" title="logout"></i>
+            </button>
+        </div>
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu">
+            <li>
+                <a href="dashboard.html" class="">
+                    <i class="bi bi-speedometer2"></i>
+                    <span>dashboard</span>
+                </a>
+            </li>
+           
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown active" >
+                    <i class="bi bi-journals"></i>
+                    <span>Master</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content ">
+                    <li>
+                        <a href="plant.html" class="active">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Plant Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-record-circle"></i>
+                            <span>WareHouse Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-record-circle"></i>
+                            <span>User Master</span> 
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Area/Zone Master</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bi bi-arrow-left-right"></i>
+                    <span>Transaction</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Drum Identification</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-record-circle"></i>
+                            <span>QC Check</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Qc to Yard</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Location Assignment</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Inspection</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Pick Slip Creation</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-record-circle"></i>
+                            <span>OutBound Delivery</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Audit</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Audit Scaning</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Gate Out Entry</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+          
+            
+            <li>
+                <a href="#">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span>Reports</span>
+                </a>
+            </li>
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bi bi-gear"></i>
+                    <span>settings</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                            darkmode
+                            <span class="darkmode-switch"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebar-logo" style="border-top: 1px solid #eee; height:auto;display: flex;
+        flex-direction: column;">
+            <img src="./images/logo-lg-1.png" alt="Comapny logo">
+            <p class="py-2 small">Version : 1.0.0.20211210</p>
+            
+        </div>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="bi bi-justify-left"></i>
+            </div>
+            <div class="main-title">
+                Add User / Operator
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container-fluid bg-white shadow">
+                <div class="row">
+                    <div class="card p-0">
+                        <div class="card-header bg-dark text-white h5">
+                         Detail <span class="text-right d-none"> Edit</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="input-group-my pt-2">
+                                    <div class="group mb-2">      
+                                          <select type="text" class="input "  required>
+                                          <option value=""> </option>
+                                          <option value="abc">abc</option>
+                                          <option value="abcd">abcd</option>
+                                          <option value="abcde">abcde</option>>
+                                          </select>
+                                          <!-- <span class="highlight"></span>
+                                          <span class="bar"></span> -->
+                                          <label class="label">Select Plant Code <span style="color:red;">*</span></label>
+                                          <p class="has-error m-0">Plant Code is required</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-group-my pt-2">
+                                        <div class="group mb-2">      
+                                              <select type="text" class="input "  required>
+                                              <option value=""> </option>
+                                              <option value="abc">abc</option>
+                                              <option value="abcd">abcd</option>
+                                              <option value="abcde">abcde</option>>
+                                              </select>
+                                              <!-- <span class="highlight"></span>
+                                              <span class="bar"></span> -->
+                                              <label class="label">Select Department <span style="color:red;">*</span></label>
+                                              <p class="has-error m-0">Department is required</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                            <div class="col-lg-6">
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <input type="text" class="input1"  required>
+                                         <!-- <span class="highlight"></span>
+                                         <span class="bar"></span> -->
+                                         <label class="label1">User Id <span style="color:red;">*</span></label>
+                                         <p class="has-error m-0">User Id is required</p>
+                                       </div>
+                                      </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <input type="text" class="input1"  required>
+                                         <!-- <span class="highlight"></span>
+                                         <span class="bar"></span> -->
+                                         <label class="label1">EMP Code <span style="color:red;">*</span></label>
+                                         <p class="has-error m-0">EMP Code  is required</p>
+                                       </div>
+                                      </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <input type="text" class="input1"  required>
+                                         <!-- <span class="highlight"></span>
+                                         <span class="bar"></span> -->
+                                         <label class="label1">EMP Id <span style="color:red;">*</span></label>
+                                         <p class="has-error m-0">EMP Id  is required</p>
+                                       </div>
+                                      </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input-group-my pt-2">
+                                <div class="group mb-2">      
+                                      <select type="text" class="input "  required>
+                                      <option value=""> </option>
+                                      <option value="abc">abc</option>
+                                      <option value="abcd">abcd</option>
+                                      <option value="abcde">abcde</option>>
+                                      </select>
+                                      <!-- <span class="highlight"></span>
+                                      <span class="bar"></span> -->
+                                      <label class="label">Select User Type <span style="color:red;">*</span></label>
+                                      <p class="has-error m-0">User Type is required</p>
+                                    </div>
+                                </div>
+                                </div>
+                            <div class="col-lg-6">
+                                <div class="input-group-my pt-2">
+                                    <div class="group1 mb-2">      
+                                         <textarea type="text" class="input1"   required style="height: 50px;" ></textarea>
+                                         <!-- <span class="highlight"></span>
+                                         <span class="bar"></span> -->
+                                         <label class="label1">Remarks <span style="color:red;">*</span></label>
+                                         <p class="has-error m-0">Remarks is required</p>
+                                       </div>
+                                      </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="list-group grouplist">
+                                <ul class="list-group" style="height: 200px; overflow-y: auto; ">
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      Inward Store
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      Incoming QA Labeling
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      Pick LIst
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      Pick LIst2
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      Pick LIst3
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                        Pick LIst4
+                                      </li>
+                                    
+                                  </ul>
+                                  <label class="labellist">Operation Permission</label>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            <div class="row">
+                                <div class="col-12 text-end">
+                                    <button type="button" class="btn btn-kec">Add</button>
+                                    <button type="button" class="btn btn-secondary" 
+                                    onclick="window.location.href = 'user.html'">Cancel</button>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+             
+
+            </div>
+               
+            </div>
+
+           
+        </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    
+
+    <!-- SCRIPT -->
+    <!-- APEX CHART -->
+    
+    <!-- APP JS -->
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/Chart.js"></script>
+    <script src="./js/app.js"></script>
+    
+
+</body>
+
+</html>
