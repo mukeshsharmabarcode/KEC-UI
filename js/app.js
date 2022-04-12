@@ -55,9 +55,15 @@ $('.input1').change(function(){
   $(this).siblings('.has-error').css({"visibility": "hidden"});
 
 });
-
+      $("#edit").click(function(){
+  
+    $('input').prop('disabled', false);
+     $('textarea').prop('disabled', false);
+     $('select').prop('disabled', false);
+  });
 
 });
+
 
 // $('.input1').change(function(){
   

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEC | Plant</title>
+    <title>KEC |  Warehouse Master</title>
     
     <!-- APP CSS -->
     <link rel="stylesheet" href="./css/grid.css">
@@ -54,13 +54,13 @@
                 </a>
                 <ul class="sidebar-menu sidebar-menu-dropdown-content">
                     <li>
-                        <a href="plant.html" class="active">
+                        <a href="plant.html">
                             <i class="bi bi-record-circle"></i>
                             <span>Plant Master</span>
                         </a>
                     </li>
                     <li>
-                        <a href="warehouse.html" >
+                        <a href="warehouse.html" class="active">
                             <i class="bi bi-record-circle"></i>
                             <span>WareHouse Master</span>
                         </a>
@@ -191,7 +191,7 @@
                 <i class="bi bi-justify-left"></i>
             </div>
             <div class="main-title">
-                Plant 
+                Warehouse Master 
             </div>
         </div>
         <div class="main-content">
@@ -215,7 +215,7 @@
                                       
                                       </select>
                                      
-                                      <label class="label">Plant Code</label>
+                                      <label class="label"> Warehouse Code</label>
                                      
                                     </div>
                                 </div>
@@ -224,10 +224,34 @@
                                     <div class="input-group-my">
                                         <div class="group">      
                                              <input type="text" class="input"  required>                                
-                                             <label class="label">Plant Name </label>
+                                             <label class="label"> Warehouse Name </label>
                                              
                                            </div>
                                           </div>
+                                </div>
+                                <div class="col-lg-6 col-12 col-md-6 col-sm-6">
+                                    <div class="input-group-my">
+                                        <div class="group">      
+                                             <input type="text" class="input"  required>                                
+                                             <label class="label"> Plant Code </label>
+                                             
+                                           </div>
+                                          </div>
+                                </div>
+                                <div class="col-lg-6 col-12 col-md-6 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <select type="text" class="input"   required>
+                                        <option > </option>
+                                      <option value="1">Active </option>
+                                      <option value="0">In Active</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label"> Select Status</label>
+                                     
+                                    </div>
+                                </div>
                                 </div>
                         </div>
                         <div class="row">
@@ -250,7 +274,7 @@
                           </div>
                   </div>
                   <div class="col-lg-2 col-2 col-sm-2 text-center">
-                    <a href="add-plant.html" class="btn kec-add-btn">
+                    <a href="add-warehouse.html" class="btn kec-add-btn">
                          <span><i class="bi bi-plus-circle-fill"></i></span>
                          Add
                     </a>
@@ -263,8 +287,9 @@
                     <thead class="table-dark text-center">
                         <tr>
                           <th  class="text-center" scope="col">Sr. No.</th>
+                          <th class="text-center" scope="col">Warehouse Code</th>
+                          <th class="text-center" scope="col">Warehouse Name</th>
                           <th class="text-center" scope="col">Plant Code</th>
-                          <th class="text-center" scope="col">Address</th>
                           <th class="text-center" scope="col">Status</th>
                           <th class="text-center" scope="col">Action</th>
                         </tr>
@@ -274,9 +299,10 @@
                           <th scope="row">1</th>
                           <td>BR</td>
                           <td>abcd</td>
+                          <td>P-0010</td>
                           <td><i class="bi bi-check2-circle text-success h5"></i></td>
                           <td>
-                              <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
+                              <a href="edit-warehouse.html"><i class="bi bi-eye text-dark h5"></i></a>
                             <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
                         </td>
                         </tr>
@@ -284,9 +310,10 @@
                           <th scope="row">2</th>
                           <td>VM</td>
                           <td>abcd</td>
+                          <td>P-0013</td>
                           <td><i class="bi bi-dash-circle text-danger h5"></i></td>
                           <td>
-                            <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
+                            <a href="edit-warehouse.html"><i class="bi bi-eye text-dark h5"></i></a>
                             <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
                           </td>
                         </tr>
@@ -294,9 +321,10 @@
                             <th scope="row">3</th>
                             <td>BR</td>
                             <td>abcd</td>
+                            <td>P-0011</td>
                             <td><i class="bi bi-check2-circle text-success h5"></i></td>
                             <td>
-                                <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
+                                <a href="edit-warehouse.html"><i class="bi bi-eye text-dark h5"></i></a>
                               <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
                           </td>
                           </tr>
@@ -304,9 +332,10 @@
                             <th scope="row">4</th>
                             <td>VM</td>
                             <td>abcd</td>
+                            <td>P-0050</td>
                             <td><i class="bi bi-dash-circle text-danger text-danger h5"></i></td>
                             <td>
-                              <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
+                              <a href="edit-warehouse.html"><i class="bi bi-eye text-dark h5"></i></a>
                               <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
                             </td>
                           </tr>
@@ -314,9 +343,10 @@
                             <th scope="row">5</th>
                             <td>BR</td>
                             <td>abcd</td>
+                            <td>P-1010</td>
                             <td><i class="bi bi-check2-circle text-success h5"></i></td>
                             <td>
-                                <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
+                                <a href="edit-warehouse.html"><i class="bi bi-eye text-dark h5"></i></a>
                               <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
                           </td>
                           </tr>
@@ -324,9 +354,10 @@
                             <th scope="row">6</th>
                             <td>VM</td>
                             <td>abcd</td>
+                            <td>P-0710</td>
                             <td><i class="bi bi-dash-circle text-danger h5"></i></td>
                             <td>
-                              <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
+                              <a href="edit-warehouse.html"><i class="bi bi-eye text-dark h5"></i></a>
                               <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
                             </td>
                           </tr>
@@ -334,9 +365,10 @@
                             <th scope="row">7</th>
                             <td>BR</td>
                             <td>abcd</td>
+                            <td>P-0050</td>
                             <td><i class="bi bi-check2-circle text-success h5"></i></td>
                             <td>
-                                <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
+                                <a href="edit-warehouse.html"><i class="bi bi-eye text-dark h5"></i></a>
                               <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
                           </td>
                           </tr>
@@ -344,9 +376,10 @@
                             <th scope="row">8</th>
                             <td>VM</td>
                             <td>abcd</td>
+                            <td>P-1010</td>
                             <td><i class="bi bi-dash-circle text-danger h5"></i></td>
                             <td>
-                              <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
+                              <a href="edit-warehouse.html"><i class="bi bi-eye text-dark h5"></i></a>
                               <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
                             </td>
                           </tr>

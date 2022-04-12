@@ -435,7 +435,7 @@ a {
 
 table {
     width: 100%;
-    min-width: 1000px;
+    min-width: 400px;
 }
 
 .order-owner {
@@ -570,12 +570,13 @@ table td {
     align-items: center;
 }
 .login {
-   
     width: 400px;
     padding: 10px;
     min-height: 50vh;
     background-color: var(--box-bg);
     box-shadow: var(--menu-shadow);
+    display: flex;
+    flex-direction: column;
 }
 .login-logo {
     padding: 10px 5px;
@@ -646,6 +647,9 @@ table td {
 .login .login-btn:disabled{
     opacity: 0.6;
     cursor: not-allowed;
+}
+.forget_text:hover{
+    font-weight: bold;
 }
 /* .login-btn:hover {
     opacity: 1;
@@ -786,6 +790,7 @@ padding-left: .3rem;
     margin-bottom: var(--bs-gutter-y);
     background-color: var(--box-bg);
     color: var(--text-color);
+ overflow-x: auto;
 }
 .text-right{ float: right;}
 .grouplist{ position: relative; padding-top: 10px; 
@@ -806,3 +811,27 @@ padding-left: .3rem;
     background-color: #fff;
     padding: 3px 6px;
 }
+
+.p-cursor{
+    cursor: pointer;
+}
+
+
+/*------------------------ Responsive Css ------------------------*/
+@media only screen and (max-width: 580px) {
+.login {
+    width: 90%;
+    padding: 0;
+   
+}
+.main-content {
+    padding: 10px;
+   
+}
+.input-group-my {
+    padding: 10px 0 0;
+}
+
+}
+
+
