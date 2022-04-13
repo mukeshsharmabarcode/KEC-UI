@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEC | Reports</title>
+    
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css.map">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+ <link href="./css/jquery-ui.min.css" type="text/css" rel="stylesheet">
+
+
+
+</head>
+
+<body >
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="./images/logo-lg.png" alt="Comapny logo">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class="bi bi-x-circle"></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <img src="./images/user-image-2.png" alt="User picture" class="profile-image">
+                <div class="sidebar-user-name">
+                   User Name 
+                </div>
+            </div>
+            <button class="btn btn-outline" onclick="window.location.href = 'index.html'">
+                <i class="bi bi-box-arrow-in-right" title="logout"></i>
+            </button>
+        </div>
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu">
+            <li>
+                <a href="dashboard.html" >
+                    <i class="bi bi-speedometer2"></i>
+                    <span>dashboard</span>
+                </a>
+            </li>
+           
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown" >
+                    <i class="bi bi-journals"></i>
+                    <span>Master</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="plant.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Plant Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="warehouse.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>WareHouse Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>User Master</span> 
+                        </a>
+                    </li>
+                    <li><a href="area-zone.html">
+                    <i class="bi bi-record-circle"></i>
+                    <span>Area/Zone Master</span>
+                </a>
+            </li>
+                </ul>
+            </li>
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bi bi-arrow-left-right"></i>
+                    <span>Transaction</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    
+                   
+                    <li>
+                        <a href="pickslip-creation.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Pick Slip Creation</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="audit.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Audit</span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+
+                <a href="#" class="sidebar-menu-dropdown active" >
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span>Reports</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    
+                   
+                    <li>
+                        <a href="report.html" class="active">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Stock</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Inward</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>QC</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Outward</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Pick</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Audit</span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                </ul>
+            </li>
+          
+            
+            
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bi bi-gear"></i>
+                    <span>settings</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                            darkmode
+                            <span class="darkmode-switch"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebar-logo" style="border-top: 1px solid #eee; height:auto;display: flex;
+        flex-direction: column;">
+            <img src="./images/logo-lg-1.png" alt="Comapny logo">
+            <p class="py-2 small">Version : 1.0.0.20211210</p>
+            
+        </div>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="bi bi-justify-left"></i>
+            </div>
+            <div class="main-title">
+                Stock Report
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container-fluid bg-white shadow">
+                <div class="row">
+                    <div class="header-kec">
+                  <div class="col-lg-8 col-8 col-md-8 col-sm-8 p-0">
+                    <div class="dropdown">
+                        <button class="btn filter_btn  dropdown-toggle p-0" type="button" id="dropdownMenuClickable" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <i class="bi bi-funnel"></i> <span>Filter</span>
+                        </button>
+                        <div class="dropdown-menu col-lg-12 col-12 my-filter" aria-labelledby="dropdownMenuClickable">
+                          <div class="row">
+                            
+                            <div class="col-lg-4 col-12 col-md-4 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <input type="text" class="input"  required>                              
+                                      <label class="label">Receipt Number</label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-4 col-12 col-md-4 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <input type="text" class="input"  required>                              
+                                      <label class="label">Lot Number</label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-4 col-12 col-md-4 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <input type="text" class="input"  required>                              
+                                      <label class="label">Item Code</label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                
+                               
+                                <div class="col-lg-6 col-12 col-md-4 col-sm-6" style="position: relative;" >
+                                    <div class="input-group-my" style="position: relative;">
+                                        <div class="group" style="position: relative;">      
+                                             <input type="text" class="input" id="muki" style="position: relative;"  required>                                
+                                             <label class="label">Accepted Scanning from Date</label>
+                                             
+                                           </div>
+                                          </div>
+                                </div>
+                                <div class="col-lg-6 col-12 col-md-4 col-sm-6" style="position: relative;" >
+                                    <div class="input-group-my" style="position: relative;">
+                                        <div class="group" style="position: relative;">      
+                                             <input type="text" class="input" id="muki1" style="position: relative;"  required>                                
+                                             <label class="label">Accepted Scanning To Date</label>
+                                             
+                                           </div>
+                                          </div>
+                                </div>
+                                <div class="col-lg-4 col-12 col-md-4 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <input type="text" class="input"  required>                              
+                                      <label class="label">Description</label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                 <div class="col-lg-4 col-12 col-md-4 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <input type="text" class="input"  required>                              
+                                      <label class="label">Accepted Scanned By</label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-4 col-12 col-md-4 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <select type="text" class="input"   required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">abc</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label">Status</label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-4 col-12 col-md-4 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <select type="text" class="input"   required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">abc</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label">Is Accepted</label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                 <div class="col-lg-4 col-12 col-md-4 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <input type="text" class="input"  required>                              
+                                      <label class="label">Work Order Number</label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                               
+                               
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="button" class="btn btn-kec">Apply</button>
+                                <button type="button" class="btn btn-secondary" >Clear</button>
+                              </div>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-4 col-sm-3">
+                    <div class="input-group-my" style="padding-top: 6px;">
+                        <div class="group m-0">  
+                                
+                             <input type="text" class="input"  required>                                
+                             <label class="label">Search </label>
+                             
+                           </div>
+                          </div>
+                  </div>
+                  
+                </div>
+                </div>
+             <div class="row">
+                 <div class="body-table">
+                  <table class="table table-striped table-hover table-bordered table-responsive text-center">
+                    <thead class="table-dark text-center">
+                        <tr>
+                          <th  class="text-center" scope="col">Receipt No.</th>
+                          <th class="text-center" scope="col">Lot No.</th>
+                          <th class="text-center" scope="col">Item Code</th>
+                          <th class="text-center" scope="col">Description</th>
+                          <th class="text-center" scope="col">Qty.</th>
+                          <th  class="text-center" scope="col">Balence</th>
+                          <th class="text-center" scope="col">UOM</th>
+                          <th class="text-center" scope="col">Shelf Expiry Date</th>
+                          <th class="text-center" scope="col">Accepted Scanning Date</th>
+                          <th class="text-center" scope="col">Accepted Scanned By</th>
+                            <th class="text-center" scope="col">Status</th>
+                          <th class="text-center" scope="col">Created On</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">11</th>
+                          <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          <td>xxxx</td>
+                          <td>xxxxxxxx</td>
+                          <td>xxxx xxxxxx</td>
+                          <td>xxxxx xxxx</td>
+                          <td>xxxxxx xxx xxxxx</td>
+                          </tr>
+                        
+                      </tbody>
+                  </table>
+                </div>
+             </div>
+
+            </div>
+               
+            </div>
+
+           
+        </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    
+
+    <!-- SCRIPT -->
+    <!-- APEX CHART -->
+    
+    <!-- APP JS -->
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/Chart.js"></script>
+    <script src="./js/app.js"></script>
+   <script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script >
+  $(document).ready(function(){
+       $('#muki,#muki1').datepicker({
+            dateFormat:"dd-mm-yy",
+            changeMonth:true,
+            changeYear:true
+            
+       });
+  });
+</script>
+  
+    
+
+</body>
+
+</html>

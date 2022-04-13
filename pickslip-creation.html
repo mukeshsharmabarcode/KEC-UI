@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEC | Plant</title>
+    <title>KEC | Pick Slip Creation</title>
     
     <!-- APP CSS -->
     <link rel="stylesheet" href="./css/grid.css">
@@ -27,7 +27,7 @@
         </div>
         <div class="sidebar-user">
             <div class="sidebar-user-info">
-                <img src="./images/user-image-2.png" alt="User picture" class="profile-image">
+                <img src="./images/user-image-3.png" alt="User picture" class="profile-image">
                 <div class="sidebar-user-name">
                    User Name 
                 </div>
@@ -39,7 +39,7 @@
         <!-- SIDEBAR MENU -->
        <ul class="sidebar-menu">
             <li>
-                <a href="dashboard.html" class="active">
+                <a href="dashboard.html" >
                     <i class="bi bi-speedometer2"></i>
                     <span>dashboard</span>
                 </a>
@@ -47,14 +47,14 @@
            
             
             <li class="sidebar-submenu">
-                <a href="#" class="sidebar-menu-dropdown active" >
+                <a href="#" class="sidebar-menu-dropdown" >
                     <i class="bi bi-journals"></i>
                     <span>Master</span>
                     <div class="dropdown-icon"></div>
                 </a>
                 <ul class="sidebar-menu sidebar-menu-dropdown-content">
                     <li>
-                        <a href="plant.html" class="active">
+                        <a href="plant.html">
                             <i class="bi bi-record-circle"></i>
                             <span>Plant Master</span>
                         </a>
@@ -80,7 +80,7 @@
             </li>
             
             <li class="sidebar-submenu">
-                <a href="#" class="sidebar-menu-dropdown">
+                <a href="#" class="sidebar-menu-dropdown active" >
                     <i class="bi bi-arrow-left-right"></i>
                     <span>Transaction</span>
                     <div class="dropdown-icon"></div>
@@ -89,7 +89,7 @@
                     
                    
                     <li>
-                        <a href="pickslip-creation.html">
+                        <a href="pickslip-creation.html" class="active">
                             <i class="bi bi-record-circle"></i>
                             <span>Pick Slip Creation</span> 
                         </a>
@@ -197,7 +197,7 @@
                 <i class="bi bi-justify-left"></i>
             </div>
             <div class="main-title">
-                Plant 
+                Pick Slip Creation 
             </div>
         </div>
         <div class="main-content">
@@ -212,29 +212,58 @@
                         <div class="dropdown-menu col-lg-12 col-12 my-filter" aria-labelledby="filter">
                           <div class="row">
                             
-                            <div class="col-lg-6 col-12 col-md-6 col-sm-6">
+                            <div class="col-lg-6 col-12 col-md-6 col-sm-6 mb-0">
                                 <div class="input-group-my">
                                 <div class="group ">      
                                       <select type="text" class="input"   required>
                                       <option value=""> </option>
-                                      <option value="Software Deptt">abc</option>
-                                      
-                                      </select>
+                                      <option value="Software Deptt">abc</option>                    
+                                      </select>                                     
+                                      <label class="label">Sales Order</label>
                                      
-                                      <label class="label">Plant Code</label>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-6 col-12 col-md-6 col-sm-6 mb-0">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <select type="text" class="input"   required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">abc</option> 
+                                      <option value="Software Deptt">abc</option>                    
+                                      </select>                                     
+                                      <label class="label">Line Item</label>
                                      
                                     </div>
                                 </div>
                                 </div>
                                 <div class="col-lg-6 col-12 col-md-6 col-sm-6">
-                                    <div class="input-group-my">
-                                        <div class="group">      
-                                             <input type="text" class="input"  required>                                
-                                             <label class="label">Plant Name </label>
-                                             
-                                           </div>
-                                          </div>
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <select type="text" class="input"   required>
+                                      <option value=""> </option>
+                                      <option value="Software Deptt">abc</option> 
+                                      <option value="Software Deptt">abc</option>                    
+                                      </select>                                     
+                                      <label class="label">Item Code</label>
+                                     
+                                    </div>
                                 </div>
+                                </div>
+                                <div class="col-lg-6 col-12 col-md-6 col-sm-6">
+                                <div class="input-group-my">
+                                <div class="group ">      
+                                      <select type="text" class="input"   required>
+                                      <option value=""> </option>
+                                      <option value="North">North</option> 
+                                      <option value="South">South</option>                    
+                                      </select>                                     
+                                      <label class="label">Zone</label>
+                                     
+                                    </div>
+                                </div>
+                                </div>
+                                
                         </div>
                         <div class="row">
                             <div class="col-12">
@@ -256,7 +285,7 @@
                           </div>
                   </div>
                   <div class="col-lg-2 col-2 col-sm-2 text-center">
-                    <a href="add-plant.html" class="btn kec-add-btn">
+                    <a href="add-pickdlip-creation.html" class="btn kec-add-btn">
                          <span><i class="bi bi-plus-circle-fill"></i></span>
                          Add
                     </a>
@@ -269,92 +298,119 @@
                     <thead class="table-dark text-center">
                         <tr>
                           <th  class="text-center" scope="col">Sr. No.</th>
-                          <th class="text-center" scope="col">Plant Code</th>
-                          <th class="text-center" scope="col">Address</th>
-                          <th class="text-center" scope="col">Status</th>
+                          <th class="text-center" scope="col">Sales Order</th>
+                          <th class="text-center" scope="col">Batch No.</th>
+                          <th class="text-center" scope="col">Item Code</th>
+                          <th class="text-center" scope="col">Description</th>
+                          <th class="text-center" scope="col">Qty.</th>
+                          <th class="text-center" scope="col">Zone</th>
                           <th class="text-center" scope="col">Action</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th scope="row">1</th>
-                          <td>BR</td>
-                          <td>abcd</td>
-                          <td><i class="bi bi-check2-circle text-success h5"></i></td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                           <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
                           <td>
-                              <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
+                              
                             <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
                         </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
-                          <td>VM</td>
-                          <td>abcd</td>
-                          <td><i class="bi bi-dash-circle text-danger h5"></i></td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                           <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
                           <td>
-                            <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
+                              
                             <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
-                          </td>
+                        </td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
-                            <td>BR</td>
-                            <td>abcd</td>
-                            <td><i class="bi bi-check2-circle text-success h5"></i></td>
-                            <td>
-                                <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
-                              <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
-                          </td>
+                            <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                           <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>
+                              
+                            <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
+                        </td>
                           </tr>
                           <tr>
                             <th scope="row">4</th>
-                            <td>VM</td>
-                            <td>abcd</td>
-                            <td><i class="bi bi-dash-circle text-danger text-danger h5"></i></td>
-                            <td>
-                              <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
-                              <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
-                            </td>
+                            <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                           <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>
+                              
+                            <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
+                        </td>
                           </tr>
                           <tr>
                             <th scope="row">5</th>
-                            <td>BR</td>
-                            <td>abcd</td>
-                            <td><i class="bi bi-check2-circle text-success h5"></i></td>
-                            <td>
-                                <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
-                              <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
-                          </td>
+                            <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                           <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>
+                              
+                            <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
+                        </td>
                           </tr>
                           <tr>
                             <th scope="row">6</th>
-                            <td>VM</td>
-                            <td>abcd</td>
-                            <td><i class="bi bi-dash-circle text-danger h5"></i></td>
-                            <td>
-                              <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
-                              <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
-                            </td>
+                            <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                           <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>
+                              
+                            <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
+                        </td>
                           </tr>
                           <tr>
                             <th scope="row">7</th>
-                            <td>BR</td>
-                            <td>abcd</td>
-                            <td><i class="bi bi-check2-circle text-success h5"></i></td>
-                            <td>
-                                <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
-                              <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
-                          </td>
+                            <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                           <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>
+                              
+                            <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
+                        </td>
                           </tr>
                           <tr>
                             <th scope="row">8</th>
-                            <td>VM</td>
-                            <td>abcd</td>
-                            <td><i class="bi bi-dash-circle text-danger h5"></i></td>
-                            <td>
-                              <a href="edit-plant.html"><i class="bi bi-eye text-dark h5"></i></a>
-                              <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
-                            </td>
+                            <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                           <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>XXXXXXXX XXXX</td>
+                          <td>
+                              
+                            <a href="#"><i class="bi bi-trash text-dark h5"></i></a>
+                        </td>
                           </tr>
                         
                       </tbody>

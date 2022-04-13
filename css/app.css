@@ -433,7 +433,7 @@ a {
     height: 100%;
 }
 
-table {
+.table {
     width: 100%;
     min-width: 400px;
 }
@@ -460,7 +460,10 @@ table th,
 table td {
     padding: 20px 0;
     border-bottom: 1px solid var(--border-color);
+
+    white-space: nowrap;
 }
+
 
 .order-status {
     padding: 5px 15px;
@@ -778,8 +781,8 @@ padding-left: .3rem;
 .header-kec {
     width: 100%;
     display: flex;
-    padding: 10px 0 0;
- background: var(--body-bg);
+    padding: 10px 0 15px;
+    background: var(--body-bg);
 }
 .row > .body-table {
     flex-shrink: 0;
@@ -835,3 +838,4 @@ padding-left: .3rem;
 }
 
 
+/*#ui-datepicker-div{ top:130px !important; }*/

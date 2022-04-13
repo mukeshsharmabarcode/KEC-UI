@@ -30,7 +30,7 @@ $("input").keyup(function(){
 
 
 });
-$('.input1').blur(function(){
+$('.input1,.input').blur(function(){
   
   if($(this).val() == '' ){
     $(this).css({ "border": ".14rem solid #c0392b"});
@@ -43,13 +43,13 @@ $('.input1').blur(function(){
 //   $(this).siblings().css({"color": "#2c3e50;"});
 //  }
 });
-$('.input1').keyup(function(){
+$('.input1,.input').keyup(function(){
   $(this).css({ "border":".14rem solid #0652dd"});
   $(this).siblings().css({"color": "#2c3e50"});
   $(this).siblings('.has-error').css({"visibility": "hidden"});
 
 });
-$('.input1').change(function(){
+$('.input1,.input').change(function(){
   $(this).css({ "border":".14rem solid #0652dd"});
   $(this).siblings().css({"color": "#2c3e50"});
   $(this).siblings('.has-error').css({"visibility": "hidden"});
@@ -89,7 +89,7 @@ let pwdv = $('#pwd').val();
 
 
 
-
+ 
 
 document.querySelectorAll('.sidebar-submenu').forEach(e => {
     e.querySelector('.sidebar-menu-dropdown').onclick = (event) => {
