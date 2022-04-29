@@ -622,7 +622,7 @@ table td {
 .login .my-input:focus ~ .psd { color: rgb(52 123 179);}
 .inp-control {
     position: relative;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .usr,.psd {
     position: absolute;
@@ -673,9 +673,10 @@ table td {
     position: absolute;
     top: 65%;
 }
-.modal.show {
+.modal-login{ display: none; }
+.modal-login.show {
     display: block;
-    background: rgba(0,0,0,0.6);
+    
 }
 .modal.show .modal-dialog {
    
@@ -685,6 +686,7 @@ table td {
    
     cursor: not-allowed;
 }
+.plant_login{ height: 40px !important; }
 /* .login-btn:hover {
     opacity: 1;
 } */

@@ -86,10 +86,19 @@ const password = document.querySelector('#pwd');
 //   $(this).siblings().css({"color": "#2c3e50;"});
 //  }
 });
-       $('.plant_close').click(function(){
-           $('.modal').removeClass('show');
-       })
-
+       // $('.plant_close').click(function(){
+       //     $('.modal').removeClass('show');
+       // })
+$('.my-input').keyup(function(){
+    let usrv = $('#usr').val();
+let pwdv = $('#pwd').val();
+if((usrv ==='admin') && ( pwdv ==='Bci@123')){
+     $('.modal-login').addClass('show');
+    
+  }else{
+     $('.modal-login').removeClass('show');
+  }
+});
 });
 
 
@@ -107,19 +116,35 @@ const password = document.querySelector('#pwd');
   
  
 // });
+
+
 let fillup = ()=>{
   let usrv = $('#usr').val();
 let pwdv = $('#pwd').val();
+let plant = $('.plant_login').val();
+
   
   if((usrv ==='admin') && ( pwdv ==='Bci@123')){
-     $('.modal').addClass('show');
+    if( ( plant !== '')){
+
+    }else{
+      swal("Login Failed ", "Please Choose Plant Code ", "error");
+     return false; 
+    
+    }
+   
     
   }
-  else{
-    // alert("dnnd");
-    swal("Login Failed ", "invalid username  or password", "error"); 
+  else {
+
+  
+      
+    swal("Login Failed ", "invalid username  or password", "error");
+     return false; 
     
-    return false;
+   
+    
+   
   }
 }
 

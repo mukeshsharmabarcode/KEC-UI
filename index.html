@@ -18,7 +18,7 @@
                 <img src="./images/logo-lg.png" alt="Comapny logo"  class="logo-img">
                
             </div>
-            <form  >
+            <form  onSubmit="return fillup();" action="dashboard.html">
                 <div class="inp-control">
                   <input type="text" class=" my-input" id="usr" placeholder="Enter User Name" 
                   autocomplete="off" required >
@@ -32,13 +32,28 @@
                  <i class="bi bi-eye-slash" id="togglePassword"></i>
                   <!-- <span id="has-error_psd">Plz Enter Corrected Password </span> -->
               </div>
+
+                                <div class="input-group-my pt-2 modal-login">
+                                <div class="group ">      
+                                      <select type="text" class="input plant_login" >
+                                      <option value="" > </option>
+                                      <option value="1">Plant1</option>
+                                      <option value="2">Plant2</option>
+                                      
+                                      </select>
+                                     
+                                      <label class="label">Select Plant</label>
+                                     
+                                    </div>
+                                </div>
+                                
               <div>
              
               </div>
-                  <button type="submit" class="login-btn" disabled="disabled" onclick="fillup();">Login</button>
+                  <button type="submit" class="login-btn" disabled="disabled" >Login</button>
                   <a href="#" class="forget_text text-right text-dark">Forgot Password ?</a>
-                  <div class="modal " tabindex="-1">
-                    <div class="modal-dialog">
+                  <!--<div class="modal " tabindex="-1">
+                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
                           <h5 class="modal-title"> Sub Plant</h5>
@@ -67,7 +82,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
               </form>
 
               <div class="login-logo  bci">
