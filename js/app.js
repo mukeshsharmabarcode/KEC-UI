@@ -62,13 +62,48 @@ $('.input1,.input').change(function(){
      $('select').prop('disabled', false);
   });
 
+       $("#togglePassword").click(function(){
+         const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#pwd');
+  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye / eye slash icon
+    this.classList.toggle('bi-eye');
+
+
+       });
+       $('.plant_login').change(function(){
+  
+  if($(this).val() != "" ){   
+    $(".save_plant").prop('disabled', false);  
+  }
+  else if($(this).val() == "" ){   
+    $(".save_plant").prop('disabled', true);  
+  
+  }
+//else if($(this).val() != ''){
+//   $(this).css({ "border-color":"#2c3e50;"});
+//   $(this).siblings().css({"color": "#2c3e50;"});
+//  }
+});
+       $('.plant_close').click(function(){
+           $('.modal').removeClass('show');
+       })
+
 });
 
 
 // $('.input1').change(function(){
+//   const togglePassword = document.querySelector('#togglePassword');
+// const password = document.querySelector('#pwd');
   
-  
-   
+//   togglePassword.addEventListener('click', function (e) {
+//     // toggle the type attribute
+//     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+//     password.setAttribute('type', type);
+//     // toggle the eye / eye slash icon
+//     this.classList.toggle('bi-eye');
+// }); 
   
  
 // });
@@ -77,12 +112,14 @@ let fillup = ()=>{
 let pwdv = $('#pwd').val();
   
   if((usrv ==='admin') && ( pwdv ==='Bci@123')){
+     $('.modal').addClass('show');
     
   }
   else{
+    // alert("dnnd");
     swal("Login Failed ", "invalid username  or password", "error"); 
     
-    return false
+    return false;
   }
 }
 

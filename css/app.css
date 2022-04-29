@@ -582,7 +582,7 @@ table td {
     flex-direction: column;
 }
 .login-logo {
-    padding: 10px 5px;
+    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -635,7 +635,7 @@ table td {
     background-color: rgb(52 123 179);
     padding: 8px 32px;
     font-size: 1.5rem;
-    margin: 10px 0;
+    margin: 10px 0 0;
     border-radius: 5px;
     outline: none;
     cursor: pointer;
@@ -653,6 +653,37 @@ table td {
 }
 .forget_text:hover{
     font-weight: bold;
+}
+#togglePassword {
+    position: absolute;
+    right: 8px;
+    top: 16px;
+    font-size: 1.2rem;
+}
+.bci {
+    position: relative;
+    padding-bottom: 30px;
+}
+.bci img {
+    width: 140px;
+    height: auto;
+}
+.logo-img{ width:100px;  height: auto;}
+.version {
+    position: absolute;
+    top: 65%;
+}
+.modal.show {
+    display: block;
+    background: rgba(0,0,0,0.6);
+}
+.modal.show .modal-dialog {
+   
+    top: 40%;
+}
+.btn.save_plant:disabled{
+   
+    cursor: not-allowed;
 }
 /* .login-btn:hover {
     opacity: 1;
