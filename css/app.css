@@ -100,8 +100,11 @@ a {
 
 .sidebar-logo img {
    
-    max-width: 50%;
+    /* max-width: 50%; */
+    height: 65px;
+    width: auto;
 }
+
 
 .sidebar-close {
     display: none;
