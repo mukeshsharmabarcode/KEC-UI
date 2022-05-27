@@ -14,82 +14,104 @@
 <body>
     <div class="wrapper">
         <div class="login">
+          <div class="left_part">
             <div class="login-logo " >
-                <img src="./images/logo-lg.png" alt="Comapny logo"  class="logo-img">
-               
-            </div>
-            <form  onSubmit="return fillup();" action="dashboard.html">
-                <div class="inp-control">
-                  <input type="text" class=" my-input" id="usr" placeholder="Enter User Name" 
-                  autocomplete="off" required >
-                  <i class="bi bi-person usr"></i>
-                  <!-- <span id="has-error_usr" >Plz Enter User Name </span> -->
-                 </div>
-                  <div class="inp-control">
-                 <input type="password" class=" my-input " id="pwd" placeholder="Enter Correct Password"
-                 required autocomplete="off">
-                 <i class="bi bi-key psd"></i>
-                 <i class="bi bi-eye-slash" id="togglePassword"></i>
-                  <!-- <span id="has-error_psd">Plz Enter Corrected Password </span> -->
-              </div>
-
-                                <div class="input-group-my pt-2 modal-login">
-                                <div class="group ">      
-                                      <select type="text" class="input plant_login" >
-                                      <option value="" > </option>
-                                      <option value="1">Plant1</option>
-                                      <option value="2">Plant2</option>
-                                      
-                                      </select>
-                                     
-                                      <label class="label">Select Plant</label>
-                                     
-                                    </div>
-                                </div>
-                                
-              <div>
+              <img src="./images/logo-lg.png" alt="Comapny logo"  class="logo-img">
              
-              </div>
-                  <button type="submit" class="login-btn" disabled="disabled" >Login</button>
-                  <a href="#" class="forget_text text-right text-dark">Forgot Password ?</a>
-                  <!--<div class="modal " tabindex="-1">
-                     <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title"> Sub Plant</h5>
-                          <button type="button" class="btn-close" ></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="col-lg-12 col-12 col-md-12 col-sm-12">
-                                <div class="input-group-my">
-                                <div class="group ">      
-                                      <select type="text" class="input plant_login" required>
-                                      <option value=""> </option>
-                                      <option value="1">Plant1</option>
-                                      <option value="2">Plant2</option>
-                                      
-                                      </select>
-                                     
-                                      <label class="label">Select Plant</label>
-                                     
-                                    </div>
-                                </div>
-                                </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary plant_close" >Close</button>
-                          <button type="button" class="btn btn-primary save_plant" onclick="window.location.href = 'dashboard.html'" disabled="disabled">Save</button>
-                        </div>
+          </div>
+          <form  onSubmit="return fillup();" action="dashboard.html">
+              <div class="inp-control">
+                <input type="text" class=" my-input" id="usr" placeholder="Enter User Name" 
+                autocomplete="off" required >
+                <i class="bi bi-person usr"></i>
+                <!-- <span id="has-error_usr" >Plz Enter User Name </span> -->
+               </div>
+                <div class="inp-control">
+               <input type="password" class=" my-input " id="pwd" placeholder="Enter Correct Password"
+               required autocomplete="off">
+               <i class="bi bi-key psd"></i>
+               <i class="bi bi-eye-slash" id="togglePassword"></i>
+                <!-- <span id="has-error_psd">Plz Enter Corrected Password </span> -->
+            </div>
+
+                              <!-- <div class="input-group-my pt-2 modal-login" style="display: block;">
+                              <div class="group ">      
+                                    <select type="text" class="input plant_login" >
+                                    <option value="" > </option>
+                                    <option value="1">Plant1</option>
+                                    <option value="2">Plant2</option>
+                                    
+                                    </select>
+                                   
+                                     <label class="label">Select Plant</label>
+                                   
+                                  </div>
+                              </div> -->
+                              <div class="inp-control">
+                                <select type="text" class=" my-input plant_login"id="pwd"  >
+                                  <option value="0" >Select Plant </option>
+                                  <option value="1">Plant1</option>
+                                  <option value="2">Plant2</option>
+                                  
+                                  </select>
+                                <!-- <input type="password" class=" my-input " id="pwd" placeholder="Enter Correct Password"
+                                required autocomplete="off">-->
+                                <i class="bi bi-bank2 psd"></i>
+                                
+                                 <!-- <span id="has-error_psd">Plz Enter Corrected Password </span> -->
+                             </div>
+                              
+            <div>
+           
+            </div>
+                <button type="submit" class="login-btn" disabled="disabled" >Login</button>
+                <a href="#" class="forget_text text-right ">Forgot Password ?</a>
+                <!--<div class="modal " tabindex="-1">
+                   <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title"> Sub Plant</h5>
+                        <button type="button" class="btn-close" ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="col-lg-12 col-12 col-md-12 col-sm-12">
+                              <div class="input-group-my">
+                              <div class="group ">      
+                                    <select type="text" class="input plant_login" required>
+                                    <option value=""> </option>
+                                    <option value="1">Plant1</option>
+                                    <option value="2">Plant2</option>
+                                    
+                                    </select>
+                                   
+                                    <label class="label">Select Plant</label>
+                                   
+                                  </div>
+                              </div>
+                              </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary plant_close" >Close</button>
+                        <button type="button" class="btn btn-primary save_plant" onclick="window.location.href = 'dashboard.html'" disabled="disabled">Save</button>
                       </div>
                     </div>
-                  </div> -->
-              </form>
+                  </div>
+                </div> -->
+            </form>
 
-              <div class="login-logo  bci">
-                <img src="./images/logo-lg-1.png" alt="Comapny logo">
-                <p class="py-2 small version">Version : 1.0.0</p>
-               
+            <div class="  bci">
+              <img src="./images/logo-lg-1.png" alt="Comapny logo">
+              <p class="">Version : 1.0.0</p>
+              <!-- <p class="py-2 small version">Version : 1.0.0</p> -->
+             
+          </div>
+          </div>
+          <div class="right_part">
+            <div class="banner-img">
+              <img src="images/cable.jpg" alt="" srcset="">
             </div>
+          </div>
+           
 
         </div>
     </div>

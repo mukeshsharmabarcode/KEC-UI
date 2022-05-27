@@ -1,4 +1,9 @@
 $(document).ready(function(){ 
+  $(".search").click(function(){
+    $('.search-toggle').toggle('slow');
+    $(this).toggleClass('active');
+
+  })
 
 $('#usr').blur(function(){
   
@@ -194,7 +199,7 @@ document.querySelector('#sidebar-close').onclick = () => {
     overlay.classList.toggle('active')
 }
 // charts
-var xValues = ["Drums", "Rfid Linked", "On Hold", "Qc Completed", "In Stock"];
+var xValues = ["Drums", "RFID Linked", "On Hold", "QC Completed", "In Stock"];
 var yValues = [200, 100, 75, 54, 50];
 var barColors = ["#3498db", "#e74c3c","#d35400","#f39c12","#16a085"];
 

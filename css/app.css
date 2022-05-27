@@ -611,7 +611,7 @@ table td {
     width: 100%;
     height: 40px;
     margin: 10px 0px;
-    padding: 10px 10px 10px 40px;
+    padding: 7px 10px 10px 40px;
     outline: none;
     border: 1px solid #999;
     border-radius: 6px;
@@ -653,6 +653,7 @@ table td {
 }
 .forget_text:hover{
     font-weight: bold;
+    opacity: 1;
 }
 #togglePassword {
     position: absolute;
@@ -789,7 +790,13 @@ font-weight: bold;
 padding-left: .3rem;
 }
 
-.my-filter{ padding: 10px !important; border:none !important; box-shadow: var(--menu-shadow);}
+.my-filter {
+    padding: 10px 1.2rem !important;
+    border: none !important;
+    box-shadow: var(--menu-shadow);
+   
+    border-top: 5px solid #081b67 !important;
+}
 .btn{ font-size: 13px !important;}
 .btn-kec {
     color: #fff !important;
@@ -853,22 +860,204 @@ padding-left: .3rem;
 }
 
 
-/*------------------------ Responsive Css ------------------------*/
-@media only screen and (max-width: 580px) {
-.login {
-    width: 90%;
-    padding: 0;
-   
+
+ .loading-part{ width:100vw; height:100vh; background:rgba(0,0,0,0.8);
+        display: block;  position: fixed; top:0; left: 0; z-index: 9999;}
+        .loading-box {
+    width: 5rem;
+    height: 5rem;
+ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.main-content {
+        .loading-box span{ position: absolute; width: 2rem; height: 2rem; background: #1e272e;
+        top:0; left:0; animation: load 1.5s linear infinite;
+    box-shadow: 0 1.4rem 208rem rgba(0,0,0,0.25) ,0 1rem 1rem rgba(0,0,0,0.22);}
+    .loading-box span:first-child{ background-color: #f50002;}
+    .loading-box span:nth-child(2){background-color: #fde603;}
+    .loading-box span:nth-child(3){background-color: #367fb4;}
+        @keyframes load {
+            0%{ left:0; top:0;}
+            12.5%{ left:50%; top:0;}
+            25%{ left:50%; top:0;}
+            37.5%{ left:50%; top:50%;}
+            50%{ left:50%; top:50%;}
+            62.5%{ left:0%; top:50%;}
+            75%{ left:0%; top:50%;}
+            87.5%{ left:0%; top:0;}
+            100%{ left:0; top:0;}
+            
+        }
+        .loading-box span:nth-child(2){
+            animation-delay: .5s;
+        }
+        .loading-box span:nth-child(3){
+            animation-delay: 1s;
+        }
+/*#ui-datepicker-div{ top:130px !important; }*/
+
+/*--------------- Edit Login Css ------------------------------------ */
+.wrapper{ background-color: #dee4f0;}
+
+.login {
+    width: 70%;
+    padding: 0px;
+    min-height: 90vh;
+     background-color: var(--box-bg); 
+   
+    box-shadow: var(--menu-shadow);
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.6rem;
+}
+.left_part {
+    width: 40%;
+    height: inherit;
+    
     padding: 10px;
    
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
-.input-group-my {
-    padding: 10px 0 0;
+.right_part {
+    width: 60%;
+    background: #000;
+    height: inherit;
+    overflow: hidden;
+    position: relative;
 }
-
+.right_part:before{ content: ''; width:100%; height: 100%; position: absolute;
+top: 0; left: 0; background: rgba(9,27,99,.52);
 }
+.banner-img {
+    width: 100%;
+    height: 100%;
+}
+.banner-img img{ height: 100%;}
+.bci {
+    position: absolute;
+    padding-bottom: .3rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.bci p {
+    font-size: .8rem;
+    /* margin: 0; */
+    color: #999;
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: center; */
+    flex-direction: row;
+    height: inherit;
+}
+.login-logo {
+   
+    padding-bottom: 2rem;
+}
+.forget_text {
+    color: #091c67;
+    font-weight: bold;
+    line-height: 3.4rem;
+    font-size: .8rem;
+    opacity: .8;
+}
+    .height-manual{ height: calc(100vh / 2 - 60px) !important;}
+    span.search {
+        /* background: #f15b26; */
+        width: 35px;
+        color: #202020;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        height: 35px;
+        float: right;
+        border-radius: .4rem;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    span.search:hover,span.search.active{background: #f15b26; color: #fff;}
+    .search-toggle{width: 90%; float: left; display: none;}
 
+    /*------------------------ Responsive Css ------------------------*/
 
-/*#ui-datepicker-div{ top:130px !important; }*/
+    @media only screen and (max-width: 1000px) {
+        .login {
+            width: 90%;
+            padding: 0;
+           
+        }
+        .main-content {
+            padding: 10px;
+           
+        }
+        .input-group-my {
+            padding: 10px 0 0;
+        }
+        .right_part {
+            width: 50%;
+            
+        }
+        .left_part {
+            width: 50%;
+           
+        }
+        .height-manual{ height: calc(100vh / 2 - 10px) !important;}
+    }
+    @media only screen and (max-width: 768px) {
+       
+        .login {
+            width: 95%;
+            padding: 0;
+           
+        }
+        .main-content {
+            padding: 10px;
+           
+        }
+        .input-group-my {
+            padding: 10px 0 0;
+        }
+        .right_part {
+            width: 40%;
+            
+        }
+        .left_part {
+            width: 60%;
+           
+        }
+    }
+    @media only screen and (max-width: 580px) {
+        .login {
+            width: 90%;
+            padding: 0;
+           
+        }
+        .main-content {
+            padding: 10px;
+           
+        }
+        .input-group-my {
+            padding: 10px 0 0;
+        }
+        .right_part {
+            
+            display: none;
+        }
+        .left_part {
+            width: 100%;
+           
+        }
+        .height-manual{ height: auto;}
+        
+        }
