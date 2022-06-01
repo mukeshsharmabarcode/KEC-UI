@@ -200,7 +200,7 @@ document.querySelector('#sidebar-close').onclick = () => {
 }
 // charts
 var xValues = ["Drums", "RFID Linked", "On Hold", "QC Completed", "In Stock"];
-var yValues = [200, 100, 75, 54, 50];
+var yValues = [150, 150, 135, 114, 180];
 var barColors = ["#3498db", "#e74c3c","#d35400","#f39c12","#16a085"];
 
 new Chart("drum", {
@@ -214,6 +214,12 @@ new Chart("drum", {
   },
   options: {
     legend: {display: false},
+    scales: {
+      xAxes: [{
+          barThickness: 15,  // number (pixels) or 'flex'
+          maxBarThickness: 12 // number (pixels)
+      }]
+  },
     title: {
       display: true,
       text: ""
@@ -236,6 +242,12 @@ new Chart("dispatch", {
   },
   options: {
     legend: {display: false},
+    scales: {
+      xAxes: [{
+        barThickness: 15,  // number (pixels) or 'flex'
+        maxBarThickness: 12 // number (pixels)
+      }]
+  },
     title: {
       display: true,
       text: ""
@@ -256,10 +268,19 @@ new Chart("sales", {
     }]
   },
   options: {
-    title: {
-      display: true,
-      text: ""
-    }
+    cutoutPercentage: 80,
+      legend: {
+          position: 'right',
+          // display: false
+         
+         
+      
+  }
+    // title: {
+    //   display: false,
+    //   text: ""
+    // },
+    
   }
 });
 var xValues3 = ["Italy", "France", "Spain", "USA", "Argentina"];
@@ -292,14 +313,45 @@ var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: data,
   options: {
-    barValueSpacing: 20,
+    barValueSpacing: 0,
     scales: {
-      yAxes: [{
-        ticks: {
-          min: 0,
-        }
+      xAxes: [{
+        barThickness: 15,  // number (pixels) or 'flex'
+        maxBarThickness: 12 // number (pixels)
       }]
-    }
+  }
+    // scales: {
+    //   yAxes: [{
+    //     ticks: {
+    //       min: 0,
+    //     }
+    //   }]
+    // }
+  }
+});
+
+var xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+new Chart("title", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{ 
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "red",
+      fill: false
+    }, { 
+      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+      borderColor: "green",
+      fill: false
+    }, { 
+      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
   }
 });
 

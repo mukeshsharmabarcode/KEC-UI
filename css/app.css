@@ -1015,7 +1015,7 @@ top: 0; left: 0; background: rgba(9,27,99,.52);
             width: 50%;
            
         }
-        .height-manual{ height: calc(100vh / 2 - 10px) !important;}
+        .height-manual{ height: 100% !important}
     }
     @media only screen and (max-width: 768px) {
        
@@ -1064,3 +1064,92 @@ top: 0; left: 0; background: rgba(9,27,99,.52);
         .height-manual{ height: auto;}
         
         }
+
+        /* chart  */
+        #charta1{    display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;}
+            #charta1 i{
+            color: #e74c3c;
+    font-size: 2rem;
+    /* border: 1px solid #000; */
+    border-radius: 100%;
+    height: 65px;
+    width: 65px;
+    background: #e74c3c33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+            }
+            #charta2{    display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;}
+                #charta2 i{
+                color: #4f92ff;
+        font-size: 2rem;
+        /* border: 1px solid #000; */
+        border-radius: 100%;
+        height: 65px;
+        width: 65px;
+        background: #4f92ff52;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+                }
+                #charta3{    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;}
+                    #charta3 i{
+                    color: #1abc9c;
+            font-size: 2rem;
+            /* border: 1px solid #000; */
+            border-radius: 100%;
+            height: 65px;
+            width: 65px;
+            background: #1abc9c3b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                    }
+                    #charta4{    display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;}
+                        #charta4 i{
+                        color: #e74c3c;
+                font-size: 2rem;
+                /* border: 1px solid #000; */
+                border-radius: 100%;
+                height: 65px;
+                width: 65px;
+                background: #e74c3c2e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                        }
+                        .card-footer i{color: #091d63;}
+                        .charta1_title{text-align: right;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: #e74c3c;}
+                        .charta2_title{text-align: right;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: #4f92ff;}
+                        .charta3_title{text-align: right;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: #1abc9c;}
+                        .charta4_title{text-align: right;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: #e74c3c;}
+                        .charta_text{text-align: right;
+                            color: #0d1f68;
+                            font-size: 22px;
+                            font-weight: bolder;}
+                        
+                       
