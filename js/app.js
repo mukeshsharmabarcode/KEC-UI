@@ -1,4 +1,63 @@
 $(document).ready(function(){ 
+
+   showAlert = function(cnt,type) {
+     
+    $(".simple-alert").show();
+    if(type == 'error'){
+                $('.alert').addClass('alert-danger').removeClass('alert-success alert-primary');
+                $('.alert span').html('<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>');
+                $('.alert .content').html(cnt);
+                
+
+            }
+            else if(type == 'success'){
+                $('.alert').addClass('alert-success').removeClass('alert-danger alert-primary');
+                $('.alert span').html('<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>');
+                $('.alert .content').html(cnt);
+
+            }
+            else{
+                $('.alert').addClass('alert-primary').removeClass('alert-success alert-danger');
+                $('.alert span').html('<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>');
+                $('.alert .content').html(cnt); 
+            }
+            
+    
+    $(".simple-alert").fadeOut(4000);
+ 
+  }
+                                             
+         window.alert = function(cnt,type){
+            $('#alert-me').show();
+            if(type == 'error'){
+                $('.alert-box ').css('color','#dc3545'); 
+                $('.alert-box i').addClass('bi bi-x-circle');
+                $('.alert-box button ').css('background-color','#dc3545').html('Try Again'); 
+                $('.alert-box > h1').html('Error');
+
+            }
+            else if(type == 'success'){
+                $('.alert-box ').css('color','#198754'); 
+                $('.alert-box i').addClass('bi bi-check-circle');
+                $('.alert-box button ').css('background-color','#198754').html('Continue');; 
+                $('.alert-box > h1').html('Success');
+
+            }
+            else{
+                $('.alert-box ').css('color','#0d6efd');
+                $('.alert-box > h1').html('Information'); 
+                $('.alert-box i').addClass('bi bi-exclamation-circle');
+                $('.alert-box button ').css('background-color','#0d6efd').html('Done'); 
+            }
+            $('.alert-box > span').html(cnt);
+
+
+
+
+         }
+         $('.close').click(function(){
+             $('#alert-me').hide();
+         });
   $(".search").click(function(){
     $('.search-toggle').toggle('slow');
     $(this).toggleClass('active');

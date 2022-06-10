@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEC | Add User</title>
+    
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css.map">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+</head>
+
+<body >
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="./images/logo-lg.png" alt="Comapny logo">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class="bi bi-x-circle"></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <img src="./images/user-image-2.png" alt="User picture" class="profile-image">
+                <div class="sidebar-user-name">
+                   User Name 
+                </div>
+            </div>
+            <button class="btn btn-outline" onclick="window.location.href = 'index.html'">
+                <i class="bi bi-box-arrow-in-right" title="logout"></i>
+            </button>
+        </div>
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu">
+            <li>
+                <a href="dashboard.html" >
+                    <i class="bi bi-speedometer2"></i>
+                    <span>dashboard</span>
+                </a>
+            </li>
+           
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown active" >
+                    <i class="bi bi-journals"></i>
+                    <span>Master</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="plant.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Plant Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="warehouse.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>WareHouse Master</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html" class="active">
+                            <i class="bi bi-record-circle"></i>
+                            <span>User Master</span> 
+                        </a>
+                    </li>
+                    <li><a href="area-zone.html">
+                    <i class="bi bi-record-circle"></i>
+                    <span>Area/Zone Master</span>
+                </a>
+            </li>
+                </ul>
+            </li>
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bi bi-arrow-left-right"></i>
+                    <span>Transaction</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    
+                   
+                    <li>
+                        <a href="pickslip-creation.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Pick Slip Creation</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="audit.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Audit</span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span>Reports</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Stock</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Inward</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>QC</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Outward</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Pick</span> 
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="report.html">
+                            <i class="bi bi-record-circle"></i>
+                            <span>Audit</span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                </ul>
+            </li>
+          
+            
+            
+            
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bi bi-gear"></i>
+                    <span>settings</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                            darkmode
+                            <span class="darkmode-switch"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebar-logo" style="border-top: 1px solid #eee; height:auto;display: flex;
+        flex-direction: column;">
+            <img src="./images/logo-lg-1.png" alt="Comapny logo">
+            <p class="py-2 small">Version : 1.0.0.20211210</p>
+            
+        </div>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="bi bi-justify-left"></i>
+            </div>
+            <div class="main-title">
+                message UI design
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container-fluid bg-white shadow">
+                <div class="row">
+                    <div class="card p-0">
+                        <div class="card-header bg-dark text-white h5">
+                            Message 
+                        </div>
+                        <div class="card-body">
+                            <h3>POPUp Message</h3><br>
+                           <button class="btn btn-danger" 
+                           onclick="alert('Password  No Change','error');">Custom Message</button>
+
+                           <button class="btn btn-success" 
+                           onclick="alert('Password  Changed Successfully','success');">Custom Message</button>
+                           <button class="btn btn-primary" 
+                           onclick="alert('Password  Changed Successfully','info');">Custom Message</button>
+    <br><br>
+
+                           <h3>Alert Message</h3><br>
+                           <button class="btn btn-danger" 
+                           onclick="showAlert('no save','error');">Custom Message</button>
+
+                           <button class="btn btn-success" 
+                           onclick="showAlert(' save','success');">Custom Message</button>
+                           <button class="btn btn-primary" 
+                           onclick="showAlert(' Please Enter value','info');">Custom Message</button>
+                        </div>
+                      </div>
+                </div>
+             
+
+            </div>
+               
+            </div>
+
+           
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+        </symbol>
+        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </symbol>
+        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </symbol>
+      </svg>
+      <div class="simple-alert">
+    <div class="alert  d-flex align-items-center justify-content-between" role="alert">
+        <span></span>
+        <div class="content"></div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </div>
+      
+    <div id="alert-me">
+        <div class="alert-box">
+            <i class=""></i>
+            <h1></h1>
+            <span></span>
+            <button class="close"></button>            
+        </div>
+
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    
+
+    <!-- SCRIPT -->
+    <!-- APEX CHART -->
+    
+    <!-- APP JS -->
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/Chart.js"></script>
+    <script src="./js/app.js"></script>
+   
+    
+
+</body>
+
+</html>
